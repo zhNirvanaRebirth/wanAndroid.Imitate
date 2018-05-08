@@ -3,6 +3,7 @@ package com.zhwilson.wanandroid
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,8 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Example of a call to a native method
-        val tv = findViewById(R.id.sample_text) as TextView
-        tv.text = stringFromJNI()
+//        val tv = findViewById(R.id.sample_text) as TextView
+//        tv.text = stringFromJNI()
+        sample_text.text = stringFromJNI()
     }
 
     /**
